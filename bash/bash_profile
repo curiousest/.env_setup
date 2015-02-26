@@ -1,0 +1,4 @@
+alias bigb='source ~/.env_setup/bash/big_bash'
+alias smallb='source ~/.env_setup/bash/small_bash'
+alias copy='xclip -sel clip'
+bigb
