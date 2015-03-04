@@ -38,7 +38,7 @@ function set_prompt() {
        _dirname="$_dirname/`basename "$_pwd"`"
     fi
     path="${LC}${_dirname}${NIL}"
-    myuser="${UC}\u@${NIL}"
+    myuser="${UC}$BASH_LOC:"
 
     # Dirtiness from:
     # http://henrik.nyh.se/2008/12/git-dirty-prompt#comment-8325834
@@ -65,7 +65,9 @@ function set_prompt() {
        venv=''
     fi
 
-    export PS1="${venv}${path}${branch} ${end}"
+    export PS1="${venv}${myuser}${path}${branch} ${end}"
+    echo -e -n '\033]2;'${BASH_LOC}:${_dirname}'\007'
 }
 
 export PROMPT_COMMAND=set_prompt
+

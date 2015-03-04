@@ -1,0 +1,3 @@
+# Short name for this machine's bash prompt
+# ex: BASH_LOC='local'
+BASH_LOC=''
