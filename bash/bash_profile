@@ -60,3 +60,4 @@ alias .6='cd ../../../../../../'        # Go back 6 directory levels
 # ==============
 
 bind -f ~/.env_setup/bash/input_profile
+gsettings set org.gnome.desktop.interface gtk-key-theme "Emacs"
