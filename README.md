@@ -2,4 +2,4 @@
 * Create bash/config file based on bash/configexample.
 * Put this line in ~/.profile file:
 
-source ~/.env_setup/bash/bash_profile
+`source ~/.env_setup/bash/bash_profile`
